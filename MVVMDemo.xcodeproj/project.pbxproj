@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6910582D28B5F56D00D880F0 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910582B28B5F56D00D880F0 /* NoteCell.swift */; };
+		6910582E28B5F56D00D880F0 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6910582C28B5F56D00D880F0 /* NoteCell.xib */; };
+		6910583128B6145400D880F0 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910583028B6145400D880F0 /* NoteView.swift */; };
+		6910583328B6147300D880F0 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910583228B6147300D880F0 /* NoteViewController.swift */; };
+		6910583528B6148500D880F0 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910583428B6148500D880F0 /* NoteViewModel.swift */; };
+		695B53D428B6D6B100226FF2 /* UIButton+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B53D328B6D6B100226FF2 /* UIButton+Validation.swift */; };
+		695B53D628B6D6CC00226FF2 /* UITextField + Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B53D528B6D6CC00226FF2 /* UITextField + Publisher.swift */; };
 		69BB5E4F28ADFA030040210E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB5E4E28ADFA030040210E /* AppDelegate.swift */; };
 		69BB5E5828ADFA070040210E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BB5E5728ADFA070040210E /* Assets.xcassets */; };
 		69BB5E5B28ADFA070040210E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BB5E5928ADFA070040210E /* LaunchScreen.storyboard */; };
@@ -39,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6910582B28B5F56D00D880F0 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		6910582C28B5F56D00D880F0 /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		6910583028B6145400D880F0 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		6910583228B6147300D880F0 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		6910583428B6148500D880F0 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		695B53D328B6D6B100226FF2 /* UIButton+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Validation.swift"; sourceTree = "<group>"; };
+		695B53D528B6D6CC00226FF2 /* UITextField + Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Publisher.swift"; sourceTree = "<group>"; };
 		69BB5E4B28ADFA030040210E /* MVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BB5E4E28ADFA030040210E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69BB5E5728ADFA070040210E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +96,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6910582A28B5F54200D880F0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6910582B28B5F56D00D880F0 /* NoteCell.swift */,
+				6910582C28B5F56D00D880F0 /* NoteCell.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		6910582F28B60DAF00D880F0 /* InputNote */ = {
+			isa = PBXGroup;
+			children = (
+				6910583028B6145400D880F0 /* NoteView.swift */,
+				6910583228B6147300D880F0 /* NoteViewController.swift */,
+				6910583428B6148500D880F0 /* NoteViewModel.swift */,
+			);
+			path = InputNote;
+			sourceTree = "<group>";
+		};
 		69BB5E4228ADFA030040210E = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +227,8 @@
 		69BB5E8928ADFC7E0040210E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				695B53D328B6D6B100226FF2 /* UIButton+Validation.swift */,
+				695B53D528B6D6CC00226FF2 /* UITextField + Publisher.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				69BB5E9428ADFE150040210E /* Component */,
+				6910582F28B60DAF00D880F0 /* InputNote */,
 				69BB5E8E28ADFD890040210E /* main */,
 			);
 			path = Scenes;
@@ -218,6 +254,7 @@
 		69BB5E8E28ADFD890040210E /* main */ = {
 			isa = PBXGroup;
 			children = (
+				6910582A28B5F54200D880F0 /* view */,
 				69BB5E9328ADFE080040210E /* Component */,
 				69BB5E8F28ADFDD90040210E /* MainViewModel.swift */,
 				69BB5E9128ADFDF50040210E /* MainViewController.swift */,
@@ -354,6 +391,7 @@
 			files = (
 				69BB5E5B28ADFA070040210E /* LaunchScreen.storyboard in Resources */,
 				69BB5E5828ADFA070040210E /* Assets.xcassets in Resources */,
+				6910582E28B5F56D00D880F0 /* NoteCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,12 +417,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				69BB5E9028ADFDD90040210E /* MainViewModel.swift in Sources */,
+				695B53D628B6D6CC00226FF2 /* UITextField + Publisher.swift in Sources */,
 				69BB5E8128ADFAB30040210E /* AppFlowDelegate.swift in Sources */,
+				6910583528B6148500D880F0 /* NoteViewModel.swift in Sources */,
 				69BB5E9728ADFF3B0040210E /* BreachModel.swift in Sources */,
 				69BB5E4F28ADFA030040210E /* AppDelegate.swift in Sources */,
 				69BB5E9228ADFDF50040210E /* MainViewController.swift in Sources */,
 				69BB5E8628ADFC020040210E /* APIClient.swift in Sources */,
 				69BB5E8C28ADFCB40040210E /* ReusableView.swift in Sources */,
+				695B53D428B6D6B100226FF2 /* UIButton+Validation.swift in Sources */,
+				6910582D28B5F56D00D880F0 /* NoteCell.swift in Sources */,
+				6910583328B6147300D880F0 /* NoteViewController.swift in Sources */,
+				6910583128B6145400D880F0 /* NoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +602,6 @@
 				INFOPLIST_FILE = MVVMDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -586,7 +629,6 @@
 				INFOPLIST_FILE = MVVMDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

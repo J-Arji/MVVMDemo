@@ -9,11 +9,13 @@ import UIKit
 
 enum AppFlow {
     case main
-    
+    case note
     var viewController: UIViewController {
         switch self {
         case .main:
             return MainViewController()
+        case .note:
+            return NoteViewController()
         }
     }
 }

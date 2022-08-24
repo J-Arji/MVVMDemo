@@ -19,11 +19,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
+        tableView.register(NoteCell.self, forCellReuseIdentifier: "NoteCell")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.allowsSelection = false
-        
         self.view.addSubview(tableView)
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
