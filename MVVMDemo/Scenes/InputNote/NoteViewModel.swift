@@ -14,12 +14,9 @@ class NoteViewModel{
     var submitResult = PassthroughSubject<Void, Error>()
     var passText = CurrentValueSubject<String, Never>("")
     var isInputValid: AnyPublisher<Bool, Never> {
-        return $noteText
-            .debounce(for: 0.3, scheduler: RunLoop.main)
-            .flatMap { note in
-                return Future { promise in
-                    promise(.success(note?.count ?? 0 > 3 ? true : false))
-                }
+         $noteText
+            .map { text in
+                return text?.count ?? 0 > 3 
             }
             .eraseToAnyPublisher()
     }
